@@ -1,0 +1,36 @@
+### Prueba del microsevicio
+GET http://127.0.0.1:8000/
+Content-Type: text/html
+
+
+### Listar Contactos
+GET http://127.0.0.1:8000/api/contactos
+Content-Type: application/json
+
+### Consultar un contacto
+GET http://127.0.0.1:8000/api/contactos/13
+Content-Type: application/json
+
+
+### Registrar un contacto
+POST http://127.0.0.1:8000/api/contactos
+Content-Type: application/json
+
+{
+   "nombre": "Anita la la tina",
+   "email": "anita@test.com",
+   "telefono": "123anita"
+}
+
+### Actualizar datos de un contacto
+PUT http://127.0.0.1:8000/api/contactos/13
+Content-Type: application/json
+
+{
+   "nombre": "Anita la tina",
+   "email": "anita@tina.com",
+   "telefono": "123anita987"
+}
+
+### Eliminar un contacto
+DELETE http://127.0.0.1:8000/api/contactos/14
