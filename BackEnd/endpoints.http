@@ -29,9 +29,12 @@ Content-Type: application/json
 POST http://127.0.0.1:8000/api/horarios_salas
 Content-Type: application/json
 {
-   "nombre": "Anita la la tina",
-   "email": "anita@test.com",
-   "telefono": "123anita"
+   "dia": "Viernes",
+   "materia": "Programación",
+   "horaInicio": "13:30",
+    "horaFin": "16:40",
+     "idPrograma": "1",
+     "idPrograma": "1"
 }
 ### Registrar un ingreso
 POST http://127.0.0.1:8000/api/ingresos
@@ -60,9 +63,12 @@ Content-Type: application/json
 PUT http://127.0.0.1:8000/api/horarios_salas/3
 Content-Type: application/json
 {
-   "nombre": "Anita la tina",
-   "email": "anita@tina.com",
-   "telefono": "123anita987"
+   "dia": "Lunes",
+   "materia": "Cálculo",
+   "horaInicio": "12:10",
+   "horaFin": "15:00",
+   "idPrograma": "1",
+   "idSala": "1",
 }
 ### Actualizar datos de un ingreso
 PUT http://127.0.0.1:8000/api/ingresos/3
