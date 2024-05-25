@@ -3,34 +3,93 @@ GET http://127.0.0.1:8000/
 Content-Type: text/html
 
 
-### Listar Contactos
-GET http://127.0.0.1:8000/api/contactos
+### Listar Horario Sala
+GET http://127.0.0.1:8000/api/horarios_salas
+Content-Type: application/json
+### Listar ingreso
+GET http://127.0.0.1:8000/api/ingresos
+Content-Type: application/json
+### Listar programa
+GET http://127.0.0.1:8000/api/programas
 Content-Type: application/json
 
-### Consultar un contacto
-GET http://127.0.0.1:8000/api/contactos/13
+
+### Consultar un Horario Sala
+GET http://127.0.0.1:8000/api/horarios_salas/3
+Content-Type: application/json
+### Consultar un ingreso
+GET http://127.0.0.1:8000/api/ingresos/3
+Content-Type: application/json
+### Consultar un programa
+GET http://127.0.0.1:8000/api/programas/3
 Content-Type: application/json
 
 
-### Registrar un contacto
-POST http://127.0.0.1:8000/api/contactos
+### Registrar un Horario Sala
+POST http://127.0.0.1:8000/api/horarios_salas
 Content-Type: application/json
-
 {
    "nombre": "Anita la la tina",
    "email": "anita@test.com",
    "telefono": "123anita"
 }
-
-### Actualizar datos de un contacto
-PUT http://127.0.0.1:8000/api/contactos/13
+### Registrar un ingreso
+POST http://127.0.0.1:8000/api/ingresos
 Content-Type: application/json
+{
+   "codigoEstudiante": "555555",
+   "nombreEstudiante": "Johan",
+   "idPrograma ": "1",
+   "fechaIngreso": "20/5/24",
+   "horaIngreso ": "14:20",
+   "horaSalida ": "15:10",
+   "idResponsable  ": "1",
+   "idSala": "1",
+   "created_at": "",
+   "updated_at": ""
+}
+### Registrar un programa
+POST http://127.0.0.1:8000/api/programas
+Content-Type: application/json
+{
+   "nombre": "Lenina"
+}
 
+
+### Actualizar datos de un Horario Sala
+PUT http://127.0.0.1:8000/api/horarios_salas/3
+Content-Type: application/json
 {
    "nombre": "Anita la tina",
    "email": "anita@tina.com",
    "telefono": "123anita987"
 }
+### Actualizar datos de un ingreso
+PUT http://127.0.0.1:8000/api/ingresos/3
+Content-Type: application/json
+{
+   "codigoEstudiante": "66666",
+   "nombreEstudiante": "Nina",
+   "idPrograma ": "2",
+   "fechaIngreso": "20/7/24",
+   "horaIngreso ": "14:20",
+   "horaSalida ": "16:10",
+   "idResponsable  ": "1",
+   "idSala": "1",
+   "created_at": "",
+   "updated_at": ""
+}
+### Actualizar datos de un programa
+PUT http://127.0.0.1:8000/api/programas/3
+Content-Type: application/json
+{
+   "nombre": "Ana"
+}
 
-### Eliminar un contacto
-DELETE http://127.0.0.1:8000/api/contactos/14
+
+### Eliminar un Horario Sala
+DELETE http://127.0.0.1:8000/api/horarios_salas/2
+### Eliminar un ingreso
+DELETE http://127.0.0.1:8000/api/ingresos/2
+### Eliminar un programa
+DELETE http://127.0.0.1:8000/api/programas/2
