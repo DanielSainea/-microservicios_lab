@@ -13,16 +13,36 @@ Content-Type: application/json
 GET http://127.0.0.1:8000/api/programas
 Content-Type: application/json
 
+### Listar Responsable
+GET http://127.0.0.1:8000/api/responsables
+Content-Type: application/json
+
+### Listar  Sala
+GET http://127.0.0.1:8000/api/salas
+Content-Type: application/json
+
+
 
 ### Consultar un Horario Sala
 GET http://127.0.0.1:8000/api/horarios_salas/3
 Content-Type: application/json
+
 ### Consultar un ingreso
 GET http://127.0.0.1:8000/api/ingresos/3
 Content-Type: application/json
+
 ### Consultar un programa
 GET http://127.0.0.1:8000/api/programas/3
 Content-Type: application/json
+
+### Consultar un Responsable
+GET http://127.0.0.1:8000/api/responsables/3
+Content-Type: application/json
+
+### Consultar una sala
+GET http://127.0.0.1:8000/api/salas/3
+Content-Type: application/json
+
 
 
 ### Registrar un Horario Sala
@@ -57,6 +77,19 @@ Content-Type: application/json
 {
    "nombre": "Lenina"
 }
+### Registrar un responsable
+POST http://127.0.0.1:8000/api/horarios_responsables
+Content-Type: application/json
+{
+   "nombre ": "Daniel",
+   
+}
+### Registrar una Sala
+POST http://127.0.0.1:8000/api/horarios_salas
+Content-Type: application/json
+{
+   "nombre": "201G",
+}
 
 
 ### Actualizar datos de un Horario Sala
@@ -89,8 +122,38 @@ Content-Type: application/json
 PUT http://127.0.0.1:8000/api/programas/3
 Content-Type: application/json
 {
-   "nombre": "Ana"
+   "nombre": "Deporte Formativo"
 }
+
+### Actualizar datos de un responsable
+PUT http://127.0.0.1:8000/api/responsables/3
+Content-Type: application/json
+{
+   "nombre": "Daniel"
+}
+
+### Actualizar datos de una sala
+PUT http://127.0.0.1:8000/api/salas/3
+Content-Type: application/json
+{
+   "nombre": "401G"
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ### Eliminar un Horario Sala
