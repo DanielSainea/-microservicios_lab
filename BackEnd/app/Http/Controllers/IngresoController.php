@@ -33,8 +33,6 @@ class IngresoController extends Controller
         $ingreso->horaSalida = $datos['horaSalida'];
         $ingreso->idResponsable = $datos['idResponsable'];
         $ingreso->idSala = $datos['idSala'];
-        $ingreso->created_at = $datos['created_at'];
-        $ingreso->updated_at = $datos['updated_at'];
         $ingreso->save();
         $data = ['data' => $ingreso];
         return response()->json($data);
@@ -52,8 +50,6 @@ class IngresoController extends Controller
         $ingreso->horaSalida = $datos['horaSalida'];
         $ingreso->idResponsable = $datos['idResponsable'];
         $ingreso->idSala = $datos['idSala'];
-        $ingreso->created_at = $datos['created_at'];
-        $ingreso->updated_at = $datos['updated_at'];
         $ingreso->save();
         $data = ['data' => $ingreso];
         return response()->json($data);

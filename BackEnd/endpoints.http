@@ -2,7 +2,7 @@
 GET http://127.0.0.1:3000/
 Content-Type: text/html
 
-
+#-------------------------LISTAR--------------------------#
 ### Listar Horario Sala
 GET http://127.0.0.1:3000/api/horarios_salas
 Content-Type: application/json
@@ -24,7 +24,7 @@ GET http://127.0.0.1:3000/api/salas
 Content-Type: application/json
 
 
-
+#------------------------CONSULTAR---------------------------#
 ### Consultar un Horario Sala
 GET http://127.0.0.1:3000/api/horarios_salas/1
 Content-Type: application/json
@@ -46,7 +46,7 @@ GET http://127.0.0.1:3000/api/salas/1
 Content-Type: application/json
 
 
-
+#------------------------REGISTRAR--------------------------#
 ### Registrar un Horario Sala
 POST http://127.0.0.1:3000/api/horarios_salas
 Content-Type: application/json
@@ -69,11 +69,9 @@ Content-Type: application/json
    "idPrograma": "1",
    "fechaIngreso": "2024-05-15",
    "horaIngreso": "3:20",
-   "horaSalida": "4:10",
+   "horaSalida":null,
    "idResponsable": "1",
-   "idSala": "1",
-   "created_at": "2022-12-21 03:14:07",
-   "updated_at": "2022-12-23 05:14:07"
+   "idSala": "1"
 }
 
 ### Registrar un programa
@@ -102,6 +100,7 @@ Content-Type: application/json
 }
 
 
+#--------------------------ACTUALIZAR------------------------#
 ### Actualizar datos de un Horario Sala
 PUT http://127.0.0.1:3000/api/horarios_salas/1
 Content-Type: application/json
@@ -125,11 +124,9 @@ Content-Type: application/json
    "idPrograma": "3",
    "fechaIngreso": "24-07-24",
    "horaIngreso": "14:20",
-   "horaSalida": "16:10",
+   "horaSalida": null,
    "idResponsable": "1",
-   "idSala": "1",
-   "created_at": "2023-04-22 03:14:07",
-   "updated_at": "2023-05-21 05:13:32"
+   "idSala": "1"
 }
 ### Actualizar datos de un programa
 PUT http://127.0.0.1:3000/api/programas/2
@@ -155,6 +152,8 @@ Content-Type: application/json
    "nombre": "401G"
 }
 
+
+#--------------------------ELIMINAR-------------------------#
 ### Eliminar un Horario Sala
 DELETE http://127.0.0.1:3000/api/horarios_salas/1
 ### Eliminar un ingreso
