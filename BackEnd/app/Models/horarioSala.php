@@ -4,7 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class horarioSala extends Model{
+class HorarioSala extends Model{
     protected $table = 'horarios_salas';
     public $timestamps = false;
     

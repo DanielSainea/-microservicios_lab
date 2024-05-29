@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Sala;
 use Illuminate\Http\Request;
 
-class ContactoController extends Controller
+class SalaController extends Controller
 {
     function index()
     {

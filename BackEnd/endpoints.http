@@ -1,100 +1,109 @@
 ### Prueba del microsevicio
-GET http://127.0.0.1:8000/
+GET http://127.0.0.1:3000/
 Content-Type: text/html
 
 
 ### Listar Horario Sala
-GET http://127.0.0.1:8000/api/horarios_salas
+GET http://127.0.0.1:3000/api/horarios_salas
 Content-Type: application/json
+
 ### Listar ingreso
-GET http://127.0.0.1:8000/api/ingresos
+GET http://127.0.0.1:3000/api/ingresos
 Content-Type: application/json
+
 ### Listar programa
-GET http://127.0.0.1:8000/api/programas
+GET http://127.0.0.1:3000/api/programas
 Content-Type: application/json
 
 ### Listar Responsable
-GET http://127.0.0.1:8000/api/responsables
+GET http://127.0.0.1:3000/api/responsables
 Content-Type: application/json
 
-### Listar  Sala
-GET http://127.0.0.1:8000/api/salas
+### Listar Sala
+GET http://127.0.0.1:3000/api/salas
 Content-Type: application/json
 
 
 
 ### Consultar un Horario Sala
-GET http://127.0.0.1:8000/api/horarios_salas/3
+GET http://127.0.0.1:3000/api/horarios_salas/3
 Content-Type: application/json
 
 ### Consultar un ingreso
-GET http://127.0.0.1:8000/api/ingresos/3
+GET http://127.0.0.1:3000/api/ingresos/3
 Content-Type: application/json
 
 ### Consultar un programa
-GET http://127.0.0.1:8000/api/programas/3
+GET http://127.0.0.1:3000/api/programas/1
 Content-Type: application/json
 
 ### Consultar un Responsable
-GET http://127.0.0.1:8000/api/responsables/3
+GET http://127.0.0.1:3000/api/responsables/3
 Content-Type: application/json
 
 ### Consultar una sala
-GET http://127.0.0.1:8000/api/salas/3
+GET http://127.0.0.1:3000/api/salas/3
 Content-Type: application/json
 
 
 
 ### Registrar un Horario Sala
-POST http://127.0.0.1:8000/api/horarios_salas
+POST http://127.0.0.1:3000/api/horarios_salas
 Content-Type: application/json
+
 {
    "dia": "Viernes",
    "materia": "Programación",
    "horaInicio": "13:30",
-    "horaFin": "16:40",
-     "idPrograma": "1",
-     "idPrograma": "1"
+   "horaFin": "16:40",
+   "idPrograma": "1",
+   "idSala": "1"
 }
 ### Registrar un ingreso
-POST http://127.0.0.1:8000/api/ingresos
+POST http://127.0.0.1:3000/api/ingresos
 Content-Type: application/json
+
 {
    "codigoEstudiante": "555555",
    "nombreEstudiante": "Johan",
-   "idPrograma ": "1",
+   "idPrograma": "1",
    "fechaIngreso": "20/5/24",
-   "horaIngreso ": "14:20",
-   "horaSalida ": "15:10",
-   "idResponsable  ": "1",
+   "horaIngreso": "14:20",
+   "horaSalida": "15:10",
+   "idResponsable": "1",
    "idSala": "1",
    "created_at": "",
    "updated_at": ""
 }
+
 ### Registrar un programa
-POST http://127.0.0.1:8000/api/programas
+POST http://127.0.0.1:3000/api/programas
 Content-Type: application/json
+
 {
    "nombre": "Lenina"
 }
 ### Registrar un responsable
-POST http://127.0.0.1:8000/api/horarios_responsables
+POST http://127.0.0.1:3000/api/horarios_responsables
 Content-Type: application/json
+
 {
    "nombre ": "Daniel",
    
 }
 ### Registrar una Sala
-POST http://127.0.0.1:8000/api/horarios_salas
+POST http://127.0.0.1:3000/api/horarios_salas
 Content-Type: application/json
+
 {
    "nombre": "201G",
 }
 
 
 ### Actualizar datos de un Horario Sala
-PUT http://127.0.0.1:8000/api/horarios_salas/3
+PUT http://127.0.0.1:3000/api/horarios_salas/3
 Content-Type: application/json
+
 {
    "dia": "Lunes",
    "materia": "Cálculo",
@@ -104,8 +113,9 @@ Content-Type: application/json
    "idSala": "1",
 }
 ### Actualizar datos de un ingreso
-PUT http://127.0.0.1:8000/api/ingresos/3
+PUT http://127.0.0.1:3000/api/ingresos/3
 Content-Type: application/json
+
 {
    "codigoEstudiante": "66666",
    "nombreEstudiante": "Nina",
@@ -119,46 +129,32 @@ Content-Type: application/json
    "updated_at": ""
 }
 ### Actualizar datos de un programa
-PUT http://127.0.0.1:8000/api/programas/3
+PUT http://127.0.0.1:3000/api/programas/3
 Content-Type: application/json
+
 {
-   "nombre": "Deporte Formativo"
+   "nombre": "Arquitectura"
 }
 
 ### Actualizar datos de un responsable
-PUT http://127.0.0.1:8000/api/responsables/3
+PUT http://127.0.0.1:3000/api/responsables/3
 Content-Type: application/json
+
 {
    "nombre": "Daniel"
 }
 
 ### Actualizar datos de una sala
-PUT http://127.0.0.1:8000/api/salas/3
+PUT http://127.0.0.1:3000/api/salas/3
 Content-Type: application/json
+
 {
    "nombre": "401G"
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ### Eliminar un Horario Sala
 DELETE http://127.0.0.1:8000/api/horarios_salas/2
 ### Eliminar un ingreso
 DELETE http://127.0.0.1:8000/api/ingresos/2
 ### Eliminar un programa
-DELETE http://127.0.0.1:8000/api/programas/2
+DELETE http://127.0.0.1:3000/api/programas/2

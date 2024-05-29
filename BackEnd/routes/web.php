@@ -23,33 +23,25 @@ $router->group(['prefix' => 'api'], function () use ($router) {
     $router->post('/horarios_salas', 'HorarioSalaController@store');
     $router->put('/horarios_salas/{id}', 'HorarioSalaController@update');
     $router->delete('/horarios_salas/{id}', 'HorarioSalaController@destroy');
-});
 
-$router->group(['prefix' => 'api'], function () use ($router) {
     $router->get('/ingresos', 'IngresoController@index');
     $router->get('/ingresos/{id}', 'IngresoController@show');
     $router->post('/ingresos', 'IngresoController@store');
     $router->put('/ingresos/{id}', 'IngresoController@update');
     $router->delete('/ingresos/{id}', 'IngresoController@destroy');
-});
 
-$router->group(['prefix' => 'api'], function () use ($router) {
     $router->get('/programas', 'ProgramaController@index');
     $router->get('/programas/{id}', 'ProgramaController@show');
     $router->post('/programas', 'ProgramaController@store');
     $router->put('/programas/{id}', 'ProgramaController@update');
     $router->delete('/programas/{id}', 'ProgramaController@destroy');
-});
 
-$router->group(['prefix' => 'api'], function () use ($router) {
     $router->get('/responsables', 'ResponsableController@index');
     $router->get('/responsables/{id}', 'ResponsableController@show');
     $router->post('/responsables', 'ResponsableController@store');
     $router->put('/responsables/{id}', 'ResponsableController@update');
     $router->delete('/responsables/{id}', 'ResponsableController@destroy');
-});
 
-$router->group(['prefix' => 'api'], function () use ($router) {
     $router->get('/salas', 'SalaController@index');
     $router->get('/salas/{id}', 'SalaController@show');
     $router->post('/salas', 'SalaController@store');
