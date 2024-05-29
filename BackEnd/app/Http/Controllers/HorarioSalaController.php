@@ -47,7 +47,7 @@ class HorarioSalaController extends Controller
         $HorarioSala->horaInicio = $datos['horaInicio'];
         $HorarioSala->horaFin = $datos['horaFin'];
         $HorarioSala->idPrograma = $datos['idPrograma'];
-        $HorarioSala->idSala  = $datos['idSala '];
+        $HorarioSala->idSala  = $datos['idSala'];
         $HorarioSala->save();
         $data = ['data' => $HorarioSala];
         return response()->json($data);
