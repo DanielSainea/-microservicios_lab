@@ -69,7 +69,7 @@ Content-Type: application/json
    "idPrograma": "1",
    "fechaIngreso": "2024-05-15",
    "horaIngreso": "3:20",
-   "horaSalida":null,
+   "horaSalida":"5:33",
    "idResponsable": "1",
    "idSala": "1"
 }
