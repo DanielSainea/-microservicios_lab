@@ -1,4 +1,4 @@
-const urlContactos = "http://127.0.0.1:8000/api/contactos";
+const urlEstudiantes = "http://127.0.0.1:3000/api/ingresos";
 let contactos = [];
 
 function consultarContactos() {
