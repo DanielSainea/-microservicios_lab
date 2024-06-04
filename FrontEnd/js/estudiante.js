@@ -1,10 +1,6 @@
 const urlEstudiantes = "http://127.0.0.1:3000/api/ingresos";
 let estudiantes = [];
-document.getElementById("form").addEventListener("submit", (e) => {
-  e.preventDefault();
-  registrarestudiante();
 
-});
 function consultarEstudiante() {
   fetch(urlEstudiantes)
     .then((res) => res.json())
@@ -16,7 +12,7 @@ function consultarEstudiante() {
 }
 
 function registrarestudiante() {
-  const form = document.forms["form"];
+  const form = document.forms["formEstu"];
   const estudiante = {
     codigoEstudiante: form["codigoEstudiante"].value,
     nombreEstudiante: form["nombreEstudiante"].value,
@@ -33,13 +29,11 @@ function registrarestudiante() {
     headers: {
       "Content-Type": "application/json",
     },
-    body: JSON.stringify(estudiantes),
+    body: JSON.stringify(estudiante),
   })
     .then((resp) => resp.json())
     .then((body) => {
       const newEstudiante = body.data;
       estudiantes.push(newEstudiante);
-      //cargarTablaContactos();
-      //consultarEstudiante();
     });
 }

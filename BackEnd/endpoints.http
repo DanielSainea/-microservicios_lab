@@ -67,9 +67,9 @@ Content-Type: application/json
    "codigoEstudiante": "885223",
    "nombreEstudiante": "Johan Liebert",
    "idPrograma": "1",
-   "fechaIngreso": "2024-05-15",
+   "fechaIngreso": "2024-06-04",
    "horaIngreso": "3:20",
-   "horaSalida":null,
+   "horaSalida":"5:33",
    "idResponsable": "1",
    "idSala": "1"
 }

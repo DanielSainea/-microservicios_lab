@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,32 +8,21 @@
 <body>
     <header>
         <h1>Datos Estudiante</h1>
+    </header>
         <main>
             <section>
-            <form id="form">
+            <form id="formEstu" name="formEstu">
                 <div>
-                    <label id="codigoEstudiante">Codigo estudiante </label>
-                    <input type="text">
+                    <label>Codigo estudiante </label>
+                    <input type="text" id="codigoEstudiante">
                 </div>
                 <div>
-                    <label id="nombreEstudiante"> Nombre estudiante </label>
-                    <input type="text">
+                    <label> Nombre estudiante </label>
+                    <input id="nombreEstudiante" type="text">
                 </div>
                 <div>
-                    <label id="idPrograma"> Fecha ingreso </label>
-                    <input type="date">
-                </div>
-                <div>
-                    <label id="fechaIngreso"> Hora ingreso </label>
-                    <input type="time">
-                </div>
-                <div>
-                    <label id="horaIngreso"> Hora salida </label>
-                    <input type="time">
-                </div>
-                <div>
-                    <label id="horaSalida">Programa </label>
-                   <select class="programa" id="programas" required>
+                    <label>Programa </label>
+                   <select id="idPrograma" class="programa" required>
                     <option value="1">Ing Sistemas</option>
                     <option value="2">Ing Multimedia</option>
                     <option value="3">Arquitectura</option>
@@ -41,15 +30,27 @@
                    </select>
                 </div>
                 <div>
-                    <label id="idResponsable">Responsables </label>
-                   <select class="responsables" id="responsables" required>
+                    <label> Fecha ingreso </label>
+                    <input id="fechaIngreso" type="date">
+                </div>
+                <div>
+                    <label> Hora ingreso </label>
+                    <input id="horaIngreso" type="time">
+                </div>
+                <div>
+                    <label> Hora salida </label>
+                    <input id="horaSalida" type="time">
+                </div>
+                <div>
+                    <label>Responsables </label>
+                   <select id="idResponsable" class="responsables" id="responsables" required>
                     <option value="1">Juan Perez</option>
                     <option value="2">Ana Lopeez</option>
                    </select>
                 </div>
                 <div>
-                    <label id="idSala">Salas</label>
-                   <select class="salas" id="salas" required>
+                    <label>Salas</label>
+                   <select id="idSala" class="salas" id="salas" required>
                     <option value="1">201G</option>
                     <option value="2">202H</option>
                     <option value="3">203I</option>
@@ -58,10 +59,9 @@
                     <option value="6">303I</option>
                    </select>
                 </div>
-             <br><input class="enviar" type="submit" >
+             <br><input class="enviar" type="submit" value="Guardar">
             </form>
-            </section>
         </main>
-    </header>
+    <script src="../js/estudiante.js"></script>
 </body>
 </html>

@@ -3,17 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contactos</title>
+    <title>Ingresos</title>
   </head>
   <body>
-    <h1>Lista de contactos</h1>
-    <table id="contactosTable">
+    <h1>Lista de Ingresos</h1>
+    <div>
+      <form id="idfecha" name="fechaRan">
+        <label>Fecha Desde:</label>
+        <input type="date" id="fechaMin">
+        <label>Fecha Hasta:</label>
+        <input type="date" id="fechaMax">
+        <input class="estiloboton" type="submit" value="Buscar">
+      </form>
+    </div>
+    <br>
+    <table id="ingresosTable">
       <thead>
         <tr>
-          <th>Nombre</th>
-          <th>Email</th>
-          <th>Telefono</th>
-          <th></th>
+          <th>Codigo Estudiante</th>
+          <th>Nombre Estudiante</th>
+          <th>Programa</th>
+          <th>Fecha Ingreso</th>
+          <th>Hora Ingreso</th>
+          <th>Hora Salida</th>
+          <th>Responsable</th>
+          <th>idSala</th>
         </tr>
       </thead>
       <tbody>
@@ -22,23 +36,7 @@
         </tr>
       </tbody>
     </table>
-    <form name="contactoForm" id="contactoForm">
-        <div>
-            <label>Nombre</label>
-            <input type="text" name="nombre">
-        </div>
-        <div>
-            <label>Email</label>
-            <input type="email" name="email">
-        </div>
-        <div>
-            <label>Telefono</label>
-            <input type="text" name="telefono">
-        </div>
-        <div>
-            <button type="submit">Guardar</button>
-        </div>
-    </form>
-    <script src="js/contactos.js"></script>
+    <a href="../microservicios_lab_salascomputo/FrontEnd/views/datosEstudiantes.html">Registrar Nuevo ingreso</a>
+    <script src="FrontEnd/js/ingresosMostrar.js"></script>
   </body>
 </html>
