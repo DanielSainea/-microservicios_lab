@@ -1,18 +1,12 @@
 const urlEstudiantes = "http://127.0.0.1:3000/api/ingresos";
-let estudiantes = [];
 
-function consultarEstudiante() {
-  fetch(urlEstudiantes)
-    .then((res) => res.json())
-    .then((body) => {
-      estudiantes = body.data;
-      console.log(estudiantes);
-      registrarestudiante();
-    });
-}
+document.getElementById('formEstu').addEventListener('submit',(e)=>{
+  e.preventDefault();
+  registrarestudiante();
+});
 
 function registrarestudiante() {
-  const form = document.forms["formEstu"];
+  let form = document.forms["formEstu"];
   const estudiante = {
     codigoEstudiante: form["codigoEstudiante"].value,
     nombreEstudiante: form["nombreEstudiante"].value,
@@ -34,6 +28,6 @@ function registrarestudiante() {
     .then((resp) => resp.json())
     .then((body) => {
       const newEstudiante = body.data;
-      estudiantes.push(newEstudiante);
+      ingresos.push(newEstudiante);
     });
 }
