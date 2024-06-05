@@ -1,68 +1,81 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://localhost/microservicios_lab_salascomputo/css/estructuracion.css">
     <title>Document</title>
 </head>
+
 <body>
-    <header>
-        <h1>Datos Estudiante</h1>
+    <header class="header">
+        <nav class="nav">
+            <a href="#" class="logo nav-link">Registrar Nuevo Ingreso</a>
+            <ul class="nav-menu">
+                <li class="nav-menu-item"><a href="index.html" class="nav-menu-link nav-link">Volver</a>
+                </li>
+            </ul>
+        </nav>
     </header>
-        <main>
-            <section>
+    <main>
+        <section>
             <form id="formEstu" name="formEstu">
                 <div>
                     <label>Codigo estudiante </label>
-                    <input type="text" id="codigoEstudiante">
+                    <input type="number" id="codigoEstudiante" required>
                 </div>
                 <div>
                     <label> Nombre estudiante </label>
-                    <input id="nombreEstudiante" type="text">
+                    <input id="nombreEstudiante" type="text" required>
                 </div>
                 <div>
                     <label>Programa </label>
-                   <select id="idPrograma" class="programa" required>
-                    <option value="1">Ing Sistemas</option>
-                    <option value="2">Ing Multimedia</option>
-                    <option value="3">Arquitectura</option>
-                    <option value="4">Contabilidad</option>
-                   </select>
+                    <select id="idPrograma" class="programa" required>
+                        <option value="1">Ing Sistemas</option>
+                        <option value="2">Ing Multimedia</option>
+                        <option value="3">Arquitectura</option>
+                        <option value="4">Contabilidad</option>
+                    </select>
                 </div>
                 <div>
                     <label> Fecha ingreso </label>
-                    <input id="fechaIngreso" type="date">
+                    <input id="fechaIngreso" type="date" required>
                 </div>
                 <div>
                     <label> Hora ingreso </label>
-                    <input id="horaIngreso" type="time">
+                    <input id="horaIngreso" type="time" required>
                 </div>
                 <div>
                     <label> Hora salida </label>
-                    <input id="horaSalida" type="time">
+                    <input id="horaSalida" type="time" required>
                 </div>
                 <div>
                     <label>Responsables </label>
-                   <select id="idResponsable" class="responsables" id="responsables" required>
-                    <option value="1">Juan Perez</option>
-                    <option value="2">Ana Lopeez</option>
-                   </select>
+                    <select id="idResponsable" class="responsables" id="responsables" required>
+                        <option value="1">Juan Perez</option>
+                        <option value="2">Ana Lopeez</option>
+                    </select>
                 </div>
                 <div>
                     <label>Salas</label>
-                   <select id="idSala" class="salas" id="salas" required>
-                    <option value="1">201G</option>
-                    <option value="2">202H</option>
-                    <option value="3">203I</option>
-                    <option value="4">301G</option>
-                    <option value="5">302H</option>
-                    <option value="6">303I</option>
-                   </select>
+                    <select id="idSala" class="salas" id="salas" required>
+                        <option value="1">201G</option>
+                        <option value="2">202H</option>
+                        <option value="3">203I</option>
+                        <option value="4">301G</option>
+                        <option value="5">302H</option>
+                        <option value="6">303I</option>
+                    </select>
                 </div>
-             <br><input class="enviar" type="submit" value="Guardar">
+                <br><input class="enviar" type="submit" value="Guardar">
             </form>
-        </main>
-        <a href="index.html">volver</a>
+    </main>
+    <footer class="footer">
+        <h5 class="copy">©Copyright 2024,Ingenieros en multimedia</h5>
+    </footer>
+    
     <script src="../microservicios_lab_salascomputo/FrontEnd/js/estudiante.js"></script>
 </body>
+
 </html>

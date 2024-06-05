@@ -1,42 +1,59 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ingresos</title>
-  </head>
-  <body>
-    <h1>Lista de Ingresos</h1>
-    <div>
-      <form id="idfecha" name="fechaRan">
-        <label>Fecha Desde:</label>
-        <input type="date" id="fechaMin">
-        <label>Fecha Hasta:</label>
-        <input type="date" id="fechaMax">
-        <input class="estiloboton" type="submit" value="Buscar">
-      </form>
-    </div>
-    <br>
-    <table id="ingresosTable">
-      <thead>
-        <tr>
-          <th>Codigo Estudiante</th>
-          <th>Nombre Estudiante</th>
-          <th>Programa</th>
-          <th>Fecha Ingreso</th>
-          <th>Hora Ingreso</th>
-          <th>Hora Salida</th>
-          <th>Responsable</th>
-          <th>idSala</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td colspan="4">No hay informacion</td>
-        </tr>
-      </tbody>
-    </table>
-    <a href="datosEstudiantes.html">Registrar Nuevo ingreso</a>
-    <script src="FrontEnd/js/ingresosMostrar.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="http://localhost/microservicios_lab_salascomputo/css/estructuracion.css">
+  <title>Ingresos</title>
+</head>
+
+<body>
+  <header class="header">
+    <nav class="nav">
+      <a href="#" class="logo nav-link">Inicio</a>
+      <ul class="nav-menu">
+        <li class="nav-menu-item"><a href="index.html" class="nav-menu-link nav-link">Ingresos</a>
+        </li>
+        <li class="nav-menu-item"><a href="datosEstudiantes.html" class="nav-menu-link nav-link">Nuevo Registro</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <h1>Lista de Ingresos</h1>
+  <div>
+    <form id="idfecha" name="fechaRan">
+      <label>Fecha Desde:</label>
+      <input type="date" id="fechaMin">
+      <label>Fecha Hasta:</label>
+      <input type="date" id="fechaMax">
+      <input class="estiloboton" type="submit" value="Buscar">
+    </form>
+  </div>
+  <br>
+  <table id="ingresosTable">
+    <thead>
+      <tr>
+        <th>Codigo Estudiante</th>
+        <th>Nombre Estudiante</th>
+        <th>Programa</th>
+        <th>Fecha Ingreso</th>
+        <th>Hora Ingreso</th>
+        <th>Hora Salida</th>
+        <th>Responsable</th>
+        <th>idSala</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td colspan="4">No hay informacion</td>
+      </tr>
+    </tbody>
+  </table>
+  <footer class="footer">
+    <h5 class="copy">©Copyright 2024,Ingenieros en multimedia</h5>
+  </footer>
+  <script src="FrontEnd/js/ingresosMostrar.js"></script>
+</body>
+
 </html>

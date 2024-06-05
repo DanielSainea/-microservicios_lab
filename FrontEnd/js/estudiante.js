@@ -3,6 +3,8 @@ const urlEstudiantes = "http://127.0.0.1:3000/api/ingresos";
 document.getElementById('formEstu').addEventListener('submit',(e)=>{
   e.preventDefault();
   registrarestudiante();
+  formEstu.reset();
+
 });
 
 function registrarestudiante() {
@@ -30,4 +32,5 @@ function registrarestudiante() {
       const newEstudiante = body.data;
       ingresos.push(newEstudiante);
     });
+    alert("Datos Guardados");
 }
