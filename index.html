@@ -5,13 +5,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="http://localhost/microservicios_lab_salascomputo/css/estructuracion.css">
+  <link rel="stylesheet" href="http://localhost/microservicios_lab_salascomputo/css/tablas.css">
   <title>Ingresos</title>
 </head>
 
 <body>
   <header class="header">
     <nav class="nav">
-      <a href="#" class="logo nav-link">Inicio</a>
+      <a  class="logo nav-link">Inicio</a>
       <ul class="nav-menu">
         <li class="nav-menu-item"><a href="index.html" class="nav-menu-link nav-link">Ingresos</a>
         </li>
@@ -22,33 +23,33 @@
   </header>
   <h1>Lista de Ingresos</h1>
   <div>
-    <form id="idfecha" name="fechaRan">
-      <label>Fecha Desde:</label>
-      <input type="date" id="fechaMin">
-      <label>Fecha Hasta:</label>
-      <input type="date" id="fechaMax">
-      <input class="estiloboton" type="submit" value="Buscar">
-    </form>
+      <form id="idfecha" name="fechaRan">
+          <label>Fecha Desde:</label>
+          <input type="date" id="fechaMin">
+          <label>Fecha Hasta:</label>
+          <input type="date" id="fechaMax">
+          <input class="estiloboton" type="submit" value="Buscar">
+      </form>
   </div>
   <br>
   <table id="ingresosTable">
-    <thead>
-      <tr>
-        <th>Codigo Estudiante</th>
-        <th>Nombre Estudiante</th>
-        <th>Programa</th>
-        <th>Fecha Ingreso</th>
-        <th>Hora Ingreso</th>
-        <th>Hora Salida</th>
-        <th>Responsable</th>
-        <th>idSala</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td colspan="4">No hay informacion</td>
-      </tr>
-    </tbody>
+      <thead>
+          <tr>
+              <th>Código Estudiante</th>
+              <th>Nombre Estudiante</th>
+              <th>Programa</th>
+              <th>Fecha Ingreso</th>
+              <th>Hora Ingreso</th>
+              <th>Hora Salida</th>
+              <th>Responsable</th>
+              <th>Id Sala</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr>
+              <td colspan="8">No hay información</td>
+          </tr>
+      </tbody>
   </table>
   <footer class="footer">
     <h5 class="copy">©Copyright 2024,Ingenieros en multimedia</h5>

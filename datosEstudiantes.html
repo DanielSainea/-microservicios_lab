@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="http://localhost/microservicios_lab_salascomputo/css/estructuracion.css">
+    <link rel="stylesheet" href="http://localhost/microservicios_lab_salascomputo/css/Formulario.css">
     <title>Document</title>
 </head>
 
@@ -19,47 +20,51 @@
         </nav>
     </header>
     <main>
-        <section>
+        <section class="form-container">
+            <h1>Registro de Datos</h1>
             <form id="formEstu" name="formEstu">
-                <div>
-                    <label>Codigo estudiante </label>
-                    <input type="number" id="codigoEstudiante" required>
+                <div class="form-group">
+                    <label for="codigoEstudiante">Código Estudiante</label>
+                    <input placeholder="Ingrese su código" type="number" id="codigoEstudiante" required>
                 </div>
-                <div>
-                    <label> Nombre estudiante </label>
-                    <input id="nombreEstudiante" type="text" required>
+                <div class="form-group">
+                    <label for="nombreEstudiante">Nombre Estudiante</label>
+                    <input placeholder="Ingrese su nombre" id="nombreEstudiante" type="text" required>
                 </div>
-                <div>
-                    <label>Programa </label>
+                <div class="form-group">
+                    <label for="idPrograma">Programa</label>
                     <select id="idPrograma" class="programa" required>
+                        <option >Seleccione un programa</option>
                         <option value="1">Ing Sistemas</option>
                         <option value="2">Ing Multimedia</option>
                         <option value="3">Arquitectura</option>
                         <option value="4">Contabilidad</option>
                     </select>
                 </div>
-                <div>
-                    <label> Fecha ingreso </label>
+                <div class="form-group">
+                    <label for="fechaIngreso">Fecha Ingreso</label>
                     <input id="fechaIngreso" type="date" required>
                 </div>
-                <div>
-                    <label> Hora ingreso </label>
+                <div class="form-group">
+                    <label for="horaIngreso">Hora Ingreso</label>
                     <input id="horaIngreso" type="time" required>
                 </div>
-                <div>
-                    <label> Hora salida </label>
+                <div class="form-group">
+                    <label for="horaSalida">Hora Salida</label>
                     <input id="horaSalida" type="time" required>
                 </div>
-                <div>
-                    <label>Responsables </label>
-                    <select id="idResponsable" class="responsables" id="responsables" required>
+                <div class="form-group">
+                    <label for="idResponsable">Responsables</label>
+                    <select id="idResponsable" class="responsables" required>
+                        <option>Seleccione un responsable</option>
                         <option value="1">Juan Perez</option>
-                        <option value="2">Ana Lopeez</option>
+                        <option value="2">Ana Lopez</option>
                     </select>
                 </div>
-                <div>
-                    <label>Salas</label>
-                    <select id="idSala" class="salas" id="salas" required>
+                <div class="form-group">
+                    <label for="idSala">Salas</label>
+                    <select id="idSala" class="salas" required>
+                        <option >Seleccione una opción</option>
                         <option value="1">201G</option>
                         <option value="2">202H</option>
                         <option value="3">203I</option>
@@ -68,8 +73,9 @@
                         <option value="6">303I</option>
                     </select>
                 </div>
-                <br><input class="enviar" type="submit" value="Guardar">
+                <input class="enviar" type="submit" value="Guardar">
             </form>
+        </section>
     </main>
     <footer class="footer">
         <h5 class="copy">©Copyright 2024,Ingenieros en multimedia</h5>

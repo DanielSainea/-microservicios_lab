@@ -1,16 +1,20 @@
 * {
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
+    font-family: cursive, 'Courier New', Courier, monospace;
 }
 
 body {
-    font-family: sans-serif;
-    padding: 90px 20px 0;
-    height: 100%;
+    padding: 90px;
+    font-family: "Poppins", serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .header {
-    background-color: #1b2a34;
+    background-color: #343a40;
     height: 80px;
     position: fixed;
     width: 100%;
@@ -21,7 +25,6 @@ body {
 .nav {
     display: flex;
     justify-content: space-between;
-
     max-width: 1300px;
     margin: 0 auto;
 }
@@ -65,14 +68,18 @@ body {
     background-color: #142027;
     transition: 0.5s;
 }
-/*me dio pereza areglar lo de las margenes(le toca a daniel)*/
 
-.footer{
-    background: #1b2a34;
-    padding: 50px;
+.footer {
+    background-color: #343a40;
+    padding: 20px;
+    text-align: center; 
+    margin-top: auto;
+    bottom: -90px;
+    position: relative;
+    width: 100%; 
 }
 
-.copy{
+.copy {
     text-align: center;
     color: white;
 }
